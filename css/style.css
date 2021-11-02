@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
