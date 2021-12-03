@@ -4,12 +4,268 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>HIDE Portforio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/icon32.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>MySite</h1>
-  <p>UI/UXデザイナー見習いです!<br>
-    ドットインストールで勉強中です。</p>
+  <header id="header" class="js-openTarget">
+    <div class="container">
+      <div class="header-flex">
+        <h1 class="site-logo">
+          <a href="index.html"><img src="img/siteLogo1.png" alt="中原利秀ポートフォリオのロゴ画像"></a>
+        </h1>
+        <div class="pc-menu">
+          <nav>
+            <ul>
+              <li><a href="#top">TOP</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#skill">SKILL</a></li>
+              <li><a href="#work">WORK</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="open" class="sp-open">
+          <i class="fas fa-hamburger"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="sp-menu" class="sp-menu js-openTarget">
+    <div id="close">
+      <i class="fas fa-times"></i>
+    </div>
+    <nav id="sp-nav">
+      <ul>
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="mask" class="mask"></div>
+
+  <main id="main">
+    <section id="top" class="js-openTarget">
+      <ul id="mainvisual">
+      </ul>
+      <p>Welcome to<br>　my portforio</p>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="sec-title js-scrollTarget">ABOUT</h2>
+        <div class="about-flex">
+          <div class="about-text js-scrollTarget">
+            <dl class="profile">
+              <dt>メッセージ</dt>
+              <dd>
+                初めまして。<br>
+                私のポートフォリオサイトに足を運んでいただきありがとうございます。<br>
+                私は大学卒業後、病院専属のSEとして入社し、今年で10年になります。<br>
+                主な業務は、FileMakerでの院内システム開発、SQLで抽出したデータの分析、電子カルテサーバーや部門サーバーの管理、ホームページの作成など、院内システム全ての管理者をしています。<br>
+                10年間、管理者として勤務した経験を活かし、個人でWebページの作成を専門に行っております。<br>
+                また、専属SEとして働いているほかに、家業である米農家としておいしいお米作りに励んでいます。<br>
+                SEとしての経験に加え、失敗の許されない農家としての経験から、細部にまで気配りができるうえに、何かを作り、完成させるという喜びをたくさん知っています。<br>
+                何かを作り上げる喜びを誰よりも知っている私だからこそ、皆様の納得のいくWebサイトが作れると思っております。<br>
+                理想とするWebページを私と一緒に作成しましょう。
+              </dd>
+              <dt>現在の仕事</dt>
+              <dd>病院専属SE・米農家</dd>
+              <dt>趣味</dt>
+              <dd>ボルダリング・DIY・ウッドレジンアクセサリー作成</dd>
+              <dt>連絡先</dt>
+              <dd><a href="mailto:work.8a5x2a@gmail.com">work.8a5x2a@gmail.com</a></dd>
+              <dt>使用ツール</dt>
+              <dd>
+                <ul class="profile-tool">
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>DX</li>
+                  <li>Premiere Pro</li>
+                  <li>Final Cut Pro</li>
+                  <li>VScode</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="about-img js-scrollTarget">
+            <img src="img/IMG_0233.jpg" alt="中原利秀のプロフィール画像">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="container">
+        <h2 class="sec-title js-scrollTarget">SKILL</h2>
+        <div class="skill-grid">
+          <div class="skill html hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/html-5--v1.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/html-5--v1.png"/>
+            <p>HTML5/CSS3を基本としてコーディングを行います。<br>サイトをセクションごとに区切り、見やすく保守管理しやすいように常に意識をしてコーディングを行っています。<br>細かい性格なので、インデックスのズレなどは絶対にありません。</p>
+          </div>
+          <div class="skill css hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/css3.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/css3.png"/>
+            <p>HTML5/CSS3を基本としてコーディングを行います。<br>細かい性格なので、デザイン通りにコーディングすることが非常に得意です。<br>お客様のご希望のデザインに限りなく近くコーディングができます。<br>また、見ている人を飽きさせないアニメーション作りには自信があります。<br>1つのサイトで、動きが単調にならないよう様々なアニメーションを組み合わせてサイトを構築していきます。</p>
+          </div>
+          <div class="skill js hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/javascript--v1.png"/>
+            <p>フロントエンドとしては基本的な JavaScriptは実装可能です<br>クリックアニメーションやスクロールアニメーションはもちろん、スライドショーやスライダーも実装可能です。<br>動きをつけることで、見ている人を飽きさせないWebサイトを作ることができます。<br>また、現在は「React」も学習中です。今後「Reac」でのサービスも開始したいと考えています。</p>
+          </div>
+          <!-- <div class="skill wp hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/wordpress.png"/></div> -->
+          <!-- <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/wordpress.png"/>
+            <p></p>
+          </div> -->
+          <div class="skill photoshop hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/adobe-photoshop--v1.png"/>
+            <p>PhotoShopを利用して、簡単な写真の編集を行えます。<br>写真の修正や切り抜き、合成など基本的な編集は可能です。<br>私のポートフォリオサイトやオリジナルサイトで使用している写真は、9割が自分で写真を撮りに行き、加工編集したものです。</p>
+          </div>
+          <div class="skill illustrator hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/adobe-illustrator--v1.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/adobe-illustrator--v1.png"/>
+            <p>Illustratorを使用して、サイトのロゴやfaviconを作成することができます。<br>ご希望のイメージがあれば、サイトに馴染むよう作成いたします。<br>私のポートフォリオサイトのfaviconやロゴは、Illustratorでデザインし作成しています。</p>
+          </div>
+          <div class="skill xd hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/adobe-xd--v1.png"/></div>
+          <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/adobe-xd--v1.png"/>
+            <p>Webデザインは、adobeXDで行っています。<br>ポートフォリオサイト、オリジナルサイトともにXDでデザイン後にコーディングを行っています。<br>ご要望に応えられるよう丁寧にヒアリングし、デザインを固めていくことができます。</p>
+          </div>
+          <!-- <div class="skill premiere hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/adobe-premiere-pro--v1.png"/></div> -->
+          <!-- <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/adobe-premiere-pro--v1.png"/>
+            <p></p>
+          </div> -->
+          <!-- <div class="skill finalcut hidden js-scrollTarget"><img src="https://img.icons8.com/color/96/000000/final-cut-pro-x.png"/></div> -->
+          <!-- <div class="skill-detail">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <img src="https://img.icons8.com/color/96/000000/final-cut-pro-x.png"/>
+            <p></p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <h2 class="sec-title js-scrollTarget">WORK</h2>
+        <div class="work-grid">
+          <div class="work-wrapper js-scrollTarget">
+            <a href="index.html" class="work-inner-img">
+              <p>→サイトを見る</p>
+              <img src="img/portforio.png" alt="">
+            </a>
+            <div class="work-inner-text">
+              <h3 class="site-name">【My Portforio】</h3>
+              <p><span>-ポートフォリオサイト-</span></p>
+              <p>　私のポートフォリオサイトです。<br>　レスポンシブにも対応するようコーディングしました。<br>　HTML/CSSのコーディング技術や簡単なJavaScriptしか使用していませんが、動きのあるWebサイトが作れることがわかっていただけると思います。</p>
+              <ul class="work-tab">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>レスポンシブ対応</li>
+              </ul>
+            </div>
+            <div class="work-inner-btn">
+              <a href="index.html" class="btn">サイトを見る</a>
+            </div>
+          </div>
+          <div class="work-wrapper js-scrollTarget">
+            <a href="sampleSite/CoffeeShop/index.html" target="_blank" class="work-inner-img">
+              <p>→サイトを見る</p>
+              <img src="img/goodcoffe.png" alt="">
+            </a>
+            <div class="work-inner-text">
+              <h3 class="site-name">【GoodCoffee】</h3>
+              <p><span>-デモサイト-</span></p>
+              <p>　コーヒー豆にこだわった架空ショップをデザインからコーディングまで行いました。<br>　コーヒー豆に自信があるショップで、モーニングコーヒーやラテアートが目玉のショップという設定で、朝から通いたくなる様なショップのサイトになるよう意識しました。</p>
+              <ul class="work-tab">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>レスポンシブ対応</li>
+              </ul>
+            </div>
+            <div class="work-inner-btn">
+              <a href="sampleSite/CoffeeShop/index.html" target="_blank" class="btn">サイトを見る</a>
+            </div>
+          </div>
+          <div class="work-wrapper js-scrollTarget">
+            <a href="sampleSite/IwaseRice/index.html" target="_blank" class="work-inner-img">
+              <p>→サイトを見る</p>
+              <img src="img/goodcoffe.png" alt="">
+            </a>
+            <div class="work-inner-text">
+              <h3 class="site-name">【岩瀬米】</h3>
+              <p><span>-デモサイト-</span></p>
+              <p>地元農家のwebサイトをデザインからコーディングまで行いました。<br>農業の良さや魅力が伝わるように、ニュースやブログが多く見れるようなサイトに構築しました。<br>オンラインショッピングサイトへもすぐに飛べるようリンクを配置し、販売へつながるように配慮しています。<br>サイトの構築にはBootstrapを使用しています。</p>
+              <ul class="work-tab">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>レスポンシブ対応</li>
+              </ul>
+            </div>
+            <div class="work-inner-btn">
+              <a href="sampleSite/IwaseRice/index.html" target="_blank" class="btn">サイトを見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="sec-title js-scrollTarget">CONTACT</h2>
+        <div class="contact-wrapper">
+          <iframe class="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSe7bZcf-57JP2b5yDQ347kCS35sIse93JZrLQuPnr5EuRG56Q/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+          <a class="contact-form-sp" href="https://docs.google.com/forms/d/e/1FAIpQLSe7bZcf-57JP2b5yDQ347kCS35sIse93JZrLQuPnr5EuRG56Q/viewform?usp=sf_link"><i class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2021 HIDE Protforio</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: sans-serif;
+  background-color: #dcdcdc;
+  line-height: 28px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+img {
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+.sec-title {
+  font-size: 32px;
+  font-family: 'Yuji Syuku', serif;
+}
+
+.main-title {
+  font-family: 'Yuji Syuku', serif;
+  font-size: 48px;
+  background-image: url(../img/title_back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 15%;
+}
+
+.emphasis {
+  color: #f00;
+  font-weight: bold;
+}
+
+/* ---------------------------
+li hover action
+--------------------------- */
+.hover-target li {
+  position: relative;
+}
+
+.hover-target li::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #e60033;
+  transition: width .3s;
+}
+
+.hover-target li:hover:before {
+  width: 50%;
+}
+
+.hover-target li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #e60033;
+  transition: width .3s;
+}
+
+.hover-target li:hover:after {
+  width: 50%;
+}
+
+/* ------------------------------------
+pagetop about responsible
+------------------------------------ */
+
+@media (min-width:768px) {
+  .main-title {
+    font-size: 80px;
+  }
+}
+
+@media (min-width:992px) {
+  .main-title {
+    writing-mode: vertical-rl;
+    height: 50%;
+    background-size: 80%;
+  }
+
+  .about-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* -----------------------------------
+news img hover action
+----------------------------------- */
+#news .img-wrapper {
+  overflow: hidden;
+}
+
+#news img {
+  transition: .3s;
+}
+
+#news img:hover {
+  transform: scale(1.1);
+}
+
+/* --------------------------------
+item shopmove hoveraction
+-------------------------------- */
+#shop {
+  position: relative;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.4);
+}
+
+#shop::before {
+  position: absolute;
+  content: "";
+  background-color: #e60033;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: .3s;
+}
+#shop::after {
+  position: absolute;
+  content: "";
+  background-color: #e60033;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition: .3s;
+}
+#shop span::before {
+  position: absolute;
+  content: "";
+  background-color: #e60033;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  transition: .3s;
+}
+#shop span::after {
+  position: absolute;
+  content: "";
+  background-color: #e60033;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0;
+  transition: .3s;
+}
+
+#shop:hover {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.712);
+  background-color:#fff;
+}
+
+#shop:hover::before,
+#shop:hover::after {
+  width: 100%;
+}
+#shop:hover span::before,
+#shop:hover span:after {
+  height: 100%;
+}
+
+/* ----------------------------------
+blog
+---------------------------------- */
+#blog {
+  background-image: url(../img/yomimono_back.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#blog .sec-title {
+  writing-mode: vertical-rl;
+}
+
+/* ---------------------------------------
+footer
+--------------------------------------- */
+#footer p {
+  font-size: 12px;
+}
+
+/* ---------------------------------------
+JavaScript
+--------------------------------------- */
+#pagetop .js-openTarget.pagetop-left {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: 1.3s;
+}
+#pagetop .js-openTarget.pagetop-right {
+  opacity: 0;
+  transition: 1s;
+  transition-delay: .7s;
+}
+
+#pagetop .js-openTarget.open {
+  transform: none;
+  opacity: 1;
+}
+
+#navigation .js-scrollTarget li {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: .3s;
+}
+
+#navigation .js-scrollTarget.scroll li {
+  transform: none;
+  opacity: 1;
+}
+
+#navigation .js-scrollTarget.scroll li:nth-of-type(1) {
+  transition-delay: .1s;
+}
+#navigation .js-scrollTarget.scroll li:nth-of-type(2) {
+  transition-delay: .2s;
+}
+#navigation .js-scrollTarget.scroll li:nth-of-type(3) {
+  transition-delay: .3s;
+}
+#navigation .js-scrollTarget.scroll li:nth-of-type(4) {
+  transition-delay: .4s;
+}
+#navigation .js-scrollTarget.scroll li:nth-of-type(5) {
+  transition-delay: .5s;
+}
+
+#about .js-scrollTarget {
+  transform: rotateX(90deg);
+  opacity: 0;
+  transition: 1s;
+}
+
+#about .js-scrollTarget.scroll {
+  transform: none;
+  opacity: 1;
+}
+
+#news .news-menu .sec-title,
+#news .news-menu li,
+#news .news-menu .btn{
+  opacity: 0;
+  transition: 1s;
+}
+
+#news li {
+  transform: translateX(20px);
+  transition: 2s;
+}
+
+#news .news-menu.scroll .sec-title, 
+#news .news-menu.scroll li, 
+#news .news-menu.scroll .btn{
+  opacity: 1;
+  transform: none;
+}
+
+#news .js-scrollTarget.scroll li:nth-of-type(1) {
+  transition-delay: .1s;
+}
+#news .js-scrollTarget.scroll li:nth-of-type(2) {
+  transition-delay: .2s;
+}
+#news .js-scrollTarget.scroll li:nth-of-type(3) {
+  transition-delay: .3s;
+}
+
+#news .js-scrollTarget.scroll .btn {
+  transition-delay: .4s;
+}
+
+#news .article-area .article{
+  opacity: 0;
+  transform: translate(20px, 20px);
+  transition: 1s;
+}
+
+#news .article-area.scroll .article{
+  opacity: 1;
+  transform: none;
+}
+
+#news .article-area.scroll .article:nth-of-type(1) {
+  transition-delay: .1s;
+}
+#news .article-area.scroll .article:nth-of-type(2) {
+  transition-delay: .2s;
+}
+#news .article-area.scroll .article:nth-of-type(3) {
+  transition-delay: .3s;
+}
+
+#item .sec-title,
+#item #shop {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+#item .card {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: 1s;
+}
+
+#item.scroll .sec-title,
+#item.scroll #shop,
+#item.scroll .card {
+  opacity: 1;
+  transform: none;
+}
+
+#blog .sec-title {
+  letter-spacing: .5rem;
+  opacity: 0;
+  transition: 1s;
+}
+
+#blog .blog-card {
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: 1s;
+}
+
+#blog.scroll .sec-title {
+  letter-spacing: normal;
+  opacity: 1;
+}
+
+#blog.scroll .blog-card {
+  opacity: 1;
+  transform: none;
+}
