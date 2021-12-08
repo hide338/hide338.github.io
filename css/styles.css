@@ -543,14 +543,14 @@ skill
 #skill .skill-detail {
   text-align: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 32px;
   position: fixed;
   top: 0;
   left: 0;
-  height: 70vh;
+  height: 80vh;
   width: 70vw;
-  margin: 15vh 15vw;
+  margin: 10vh 15vw;
   padding: 5%;
   background-color: rgba(0 , 0, 0, .8);
   opacity: 0;
@@ -597,7 +597,7 @@ skill
     width: 100vw;
     margin: 0;
     padding-top: 15%;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
